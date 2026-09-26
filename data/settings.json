@@ -1,0 +1,133 @@
+{
+  "storeName": "FruitsIsland",
+  "siteUrl": "https://fruitsisland.vercel.app",
+  "currency": "USD",
+  "priceLocale": "en-US",
+  "email": "hola@fruitsisland.com",
+  "phone": "+1 555 555 5555",
+  "address": "Calle Palmeras 123, Ciudad Costera",
+  "hours": "Lunes a sábado, 8:00–19:00",
+  "hours_en": "Monday to Saturday, 8:00am–7:00pm",
+  "whatsapp": {
+    "number": "15555555555",
+    "message": "¡Hola FruitsIsland! Quiero hacer una consulta 🍍",
+    "message_en": "Hi FruitsIsland! I have a question 🍍"
+  },
+  "social": {
+    "instagram": "https://instagram.com/",
+    "facebook": "https://facebook.com/",
+    "tiktok": "https://tiktok.com/"
+  },
+  "announcement": "Envío gratis desde $60 en la zona local · Usa BIENVENIDA10 en tu primera compra",
+  "announcement_en": "Free local shipping over $60 · Use BIENVENIDA10 on your first order",
+  "forms": {
+    "newsletterAction": "",
+    "contactAction": ""
+  },
+  "categories": [
+    { "id": "tropicales", "name": "Frutas tropicales", "name_en": "Tropical fruit", "image": "/images/products/mango-1.svg" },
+    { "id": "exoticas", "name": "Frutas exóticas", "name_en": "Exotic fruit", "image": "/images/products/pitahaya-1.svg" },
+    { "id": "cajas-regalo", "name": "Cajas de regalo", "name_en": "Gift boxes", "image": "/images/products/caja-paraiso-1.svg" },
+    { "id": "deshidratadas", "name": "Fruta deshidratada", "name_en": "Dried fruit", "image": "/images/products/mango-deshidratado-1.svg" },
+    { "id": "jugos", "name": "Jugos", "name_en": "Juices", "image": "/images/products/jugo-maracuya-1.svg" },
+    { "id": "combos", "name": "Combos", "name_en": "Bundles", "image": "/images/products/combo-desayuno-1.svg" }
+  ],
+  "seasons": [
+    { "id": "todo-el-ano", "name": "Todo el año", "name_en": "All year" },
+    { "id": "primavera", "name": "Primavera", "name_en": "Spring" },
+    { "id": "verano", "name": "Verano", "name_en": "Summer" },
+    { "id": "otono", "name": "Otoño", "name_en": "Autumn" },
+    { "id": "invierno", "name": "Invierno", "name_en": "Winter" }
+  ],
+  "shippingZones": [
+    {
+      "id": "local",
+      "name": "Zona 1 · Ciudad",
+      "name_en": "Zone 1 · City",
+      "price": 4.9,
+      "freeFrom": 60,
+      "eta": "Mismo día (pedidos antes de las 12:00) o día siguiente",
+      "eta_en": "Same day (orders before noon) or next day",
+      "postalPrefixes": ["100", "101", "102"]
+    },
+    {
+      "id": "metro",
+      "name": "Zona 2 · Área metropolitana",
+      "name_en": "Zone 2 · Metro area",
+      "price": 7.9,
+      "freeFrom": 80,
+      "eta": "1 a 2 días hábiles",
+      "eta_en": "1–2 business days",
+      "postalPrefixes": ["103", "104", "105", "106"]
+    },
+    {
+      "id": "nacional",
+      "name": "Zona 3 · Resto del país",
+      "name_en": "Zone 3 · Rest of the country",
+      "price": 14.9,
+      "freeFrom": 120,
+      "eta": "2 a 4 días hábiles (envío refrigerado)",
+      "eta_en": "2–4 business days (refrigerated shipping)",
+      "postalPrefixes": []
+    },
+    {
+      "id": "recoger",
+      "name": "Recoger en tienda",
+      "name_en": "Store pickup",
+      "price": 0,
+      "freeFrom": 0,
+      "eta": "Listo en 2 horas",
+      "eta_en": "Ready in 2 hours",
+      "postalPrefixes": []
+    }
+  ],
+  "defaultZone": "nacional",
+  "giftMessageMaxLength": 250,
+  "boxBuilder": {
+    "sizes": [
+      { "id": "pequena", "name": "Caja pequeña", "name_en": "Small box", "slots": 4, "basePrice": 8 },
+      { "id": "mediana", "name": "Caja mediana", "name_en": "Medium box", "slots": 6, "basePrice": 10 },
+      { "id": "grande", "name": "Caja grande", "name_en": "Large box", "slots": 9, "basePrice": 12 }
+    ],
+    "image": "/images/products/caja-armala-1.svg"
+  },
+  "club": {
+    "image": "/images/products/club-1.svg",
+    "plans": [
+      {
+        "id": "isla-mini",
+        "name": "Isla Mini",
+        "name_en": "Mini Island",
+        "description": "Para 1–2 personas. 8–10 frutas tropicales de temporada.",
+        "description_en": "For 1–2 people. 8–10 seasonal tropical fruits.",
+        "weeklyPrice": 22,
+        "monthlyPrice": 29,
+        "features": ["Envío incluido", "Fruta de temporada", "Pausa o cancela cuando quieras"],
+        "features_en": ["Shipping included", "Seasonal fruit", "Pause or cancel anytime"]
+      },
+      {
+        "id": "isla-familiar",
+        "name": "Isla Familiar",
+        "name_en": "Family Island",
+        "description": "Para 3–5 personas. 15–18 frutas, incluye 1 exótica sorpresa.",
+        "description_en": "For 3–5 people. 15–18 fruits, includes 1 surprise exotic.",
+        "weeklyPrice": 36,
+        "monthlyPrice": 45,
+        "popular": true,
+        "features": ["Envío incluido", "1 fruta exótica sorpresa", "Tarjeta con recetas", "Pausa o cancela cuando quieras"],
+        "features_en": ["Shipping included", "1 surprise exotic fruit", "Recipe card", "Pause or cancel anytime"]
+      },
+      {
+        "id": "isla-exotica",
+        "name": "Isla Exótica",
+        "name_en": "Exotic Island",
+        "description": "Para exploradores. 4–5 variedades exóticas en cada entrega.",
+        "description_en": "For explorers. 4–5 exotic varieties in every delivery.",
+        "weeklyPrice": 45,
+        "monthlyPrice": 59,
+        "features": ["Envío incluido", "Solo frutas exóticas", "Guía de cata", "Pausa o cancela cuando quieras"],
+        "features_en": ["Shipping included", "Exotic fruit only", "Tasting guide", "Pause or cancel anytime"]
+      }
+    ]
+  }
+}

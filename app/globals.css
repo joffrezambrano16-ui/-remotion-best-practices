@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-sand-50 font-sans text-ink antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-leaf-500 ring-offset-2 ring-offset-sand-50;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-bold transition disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-leaf-600 text-white hover:bg-leaf-700;
+  }
+  .btn-secondary {
+    @apply btn bg-mango-400 text-ink hover:bg-mango-500;
+  }
+  .btn-outline {
+    @apply btn border-2 border-leaf-600 text-leaf-700 hover:bg-leaf-50;
+  }
+  .input {
+    @apply w-full rounded-2xl border border-sand-300 bg-white px-4 py-3 text-base text-ink placeholder:text-ink/40 focus:border-leaf-500 focus:outline-none focus:ring-2 focus:ring-leaf-200;
+  }
+  .label {
+    @apply mb-1 block text-sm font-bold text-ink/80;
+  }
+  .chip {
+    @apply inline-flex min-h-[40px] items-center rounded-full border border-sand-300 bg-white px-4 py-2 text-sm font-semibold text-ink/80 transition hover:border-leaf-400;
+  }
+  .chip-active {
+    @apply border-leaf-600 bg-leaf-600 text-white hover:border-leaf-600;
+  }
+  .card {
+    @apply rounded-4xl bg-white shadow-soft;
+  }
+  .eyebrow {
+    @apply text-sm font-bold uppercase tracking-widest text-coral-700;
+  }
+  .prose-fi h2 {
+    @apply mb-3 mt-10 text-2xl font-bold text-leaf-700;
+  }
+  .prose-fi p,
+  .prose-fi li {
+    @apply mb-3 leading-relaxed text-ink/80;
+  }
+  .prose-fi ul {
+    @apply ml-5 list-disc;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

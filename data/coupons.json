@@ -1,0 +1,29 @@
+[
+  {
+    "code": "BIENVENIDA10",
+    "type": "percent",
+    "value": 10,
+    "minSubtotal": 0,
+    "active": true,
+    "description": "10% de descuento en tu pedido",
+    "description_en": "10% off your order"
+  },
+  {
+    "code": "ISLA5",
+    "type": "fixed",
+    "value": 5,
+    "minSubtotal": 40,
+    "active": true,
+    "description": "$5 de descuento en compras desde $40",
+    "description_en": "$5 off orders over $40"
+  },
+  {
+    "code": "ENVIOGRATIS",
+    "type": "free_shipping",
+    "value": 0,
+    "minSubtotal": 30,
+    "active": true,
+    "description": "Envío gratis en compras desde $30",
+    "description_en": "Free shipping on orders over $30"
+  }
+]
